@@ -95,7 +95,7 @@ public class CreateFolderService extends PluginService {
         ObjectStore objectStore = null;
         try {
             objectStore = getObjectStore();
-            messageResponse = "get ObjectStore thành công";
+            messageResponse = "get ObjectStore success";
             switch (action) {
                 case "createFolder":
                     String nameFolder = request.getParameter("nameFolder");
@@ -111,6 +111,7 @@ public class CreateFolderService extends PluginService {
                     for (int i = 0; i < listType.length; i++) {
                         upFile(listName[i], objectStore, createNewFolder, contentFile[i], listType[i]);
                     }
+                    messageResponse += "create Folder " + nameFolder + " success";
                     break;
                 case "copyFolder":
                     String nameFolderCopy = request.getParameter("nameFolderCopy");
@@ -139,7 +140,7 @@ public class CreateFolderService extends PluginService {
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            messageResponse = "get ObjectStore thất bại";
+            messageResponse = "get ObjectStore failed";
         }
         conten.put("messageResponse", messageResponse);
         conten.serialize(response.getOutputStream());
@@ -156,10 +157,11 @@ public class CreateFolderService extends PluginService {
             while (iterator.hasNext()) {
                 folder = iterator.next();
                 deleteSubFolder(folder);
-                folder.delete();
-                folder.save(RefreshMode.REFRESH);
+                System.out.println("---------delete "+folder.get_FolderName() +"------------");
             }
         }
+        folderDelete.delete();
+        folderDelete.save(RefreshMode.REFRESH);
     }
 
     private void deleteSubFolder(Folder folder) {
@@ -173,8 +175,6 @@ public class CreateFolderService extends PluginService {
             while (iterator.hasNext()) {
                 f = (Folder) iterator.next();
                 deleteSubFolder(f);
-                f.delete();
-                f.save(RefreshMode.REFRESH);
             }
         }
     }
@@ -315,6 +315,4 @@ public class CreateFolderService extends PluginService {
         document.set_StorageArea(sa);
         document.save(RefreshMode.NO_REFRESH);
     }
-
-
 }
