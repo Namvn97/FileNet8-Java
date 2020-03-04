@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager" forced_jdk="true">
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/resources.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/rt.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/jsse.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/jce.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/charsets.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/jfr.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/access-bridge-64.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/cldrdata.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/dnsns.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/jaccess.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/jfxrt.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/localedata.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/nashorn.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/sunec.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/sunjce_provider.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/sunmscapi.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/sunpkcs11.jar!/" />
+    <libelement value="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/zipfs.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/j2ee.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/navigatorAPI.jar!/" />
+    <src_description expected_position="19">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="18" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library name="resources.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/resources.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rt.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/rt.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jsse.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/jsse.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jce.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/jce.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="charsets.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/charsets.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jfr.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/jfr.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="access-bridge-64.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/access-bridge-64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="cldrdata.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/cldrdata.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="dnsns.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/dnsns.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jaccess.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/jaccess.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jfxrt.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/jfxrt.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="localedata.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/localedata.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="nashorn.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/nashorn.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="sunec.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/sunec.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="sunjce_provider.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/sunjce_provider.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="sunmscapi.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/sunmscapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="sunpkcs11.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/sunpkcs11.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="zipfs.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jre1.8.0_241/lib/ext/zipfs.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="j2ee.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/j2ee.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="navigatorAPI.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/navigatorAPI.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/Jace.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/log4j-1.2.15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/stax-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/xlxpScanner.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/xlxpScannerUtils.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+  <component name="sonarModuleSettings">
+    <option name="alternativeWorkingDirPath" value="" />
+    <option name="localAnalysisScripName" value="&lt;PROJECT&gt;" />
+    <option name="serverName" value="&lt;PROJECT&gt;" />
+    <option name="useAlternativeWorkingDir" value="false" />
+    <option name="workingDirSelection" value="&lt;MODULE&gt;" />
+  </component>
+</module>

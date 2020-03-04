@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/Test/src/MainTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/shb/ECM-SHBPluginServices/lib/j2ee.jar!/javax/servlet/http/HttpServletResponse.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/shb/ECM-SHBPluginServices/src/vn/com/shb/ecm/WebContent/sHBPluginServicesDojo/SearchFeature.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/shb/ECM-SHBPluginServices/src/vn/com/shb/ecm/WebContent/sHBPluginServicesDojo/UploadDocCaseInfo.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/shb/ECM-SHBPluginServices/src/vn/com/shb/ecm/WebContent/sHBPluginServicesDojo/templates/UploadFile.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/shb/ECM-SHBPluginServices/src/vn/com/shb/ecm/services/SearchFeatureService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/shb/ECM-SHBPluginServices/src/vn/com/shb/ecm/services/SearchServices.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/shb/ECM-SHBPluginServices/src/vn/com/shb/ecm/services/UploadDocServices.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/SHB_ECM_2019/3.Sourcecode/ECM-SHB-Component/src/vn/com/shb/ecm/Component.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/vsii/CreateFolderService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/vsii/WebContent/Demo.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/vsii/WebContent/Demo.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/vsii/WebContent/demoDojo/ConfigurationPane.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/vsii/WebContent/demoDojo/CreateFoder.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/vsii/WebContent/demoDojo/templates/CreateFoder.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

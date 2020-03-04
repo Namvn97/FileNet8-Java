@@ -1,0 +1,15 @@
+input.left {
+    text-align: left;
+}
+
+input.right {
+    text-align: right;
+}
+
+input.center {
+    text-align: center;
+}
+
+input.indent {
+    padding-left: 10px
+}
