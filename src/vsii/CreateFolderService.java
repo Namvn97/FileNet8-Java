@@ -97,6 +97,16 @@ public class CreateFolderService extends PluginService {
             objectStore = getObjectStore();
             messageResponse = "get ObjectStore success";
             switch (action) {
+                case "test":
+                    String nameFolderTest = null;
+                    Folder folderKH = getCifFolder(objectStore, nameFolderTest);
+                    if(folderKH != null){
+                        messageResponse += " - khong co loi";
+                    }else{
+                        messageResponse += " - loi null";
+                    }
+                    messageResponse += " - hello nam - ";
+                    break;
                 case "createFolder":
                     String nameFolder = request.getParameter("nameFolder");
                     String nameSubFolder = request.getParameter("nameSubFolder");
@@ -125,6 +135,15 @@ public class CreateFolderService extends PluginService {
                         messageResponse += " --- copy folder success";
                     }
                     break;
+                case "createFolderTest":
+                    String nameFolderFather = request.getParameter("nameFolderFather");
+                    String listSubFolder = request.getParameter("listSubFolder");
+                    String[] listFolder = listSubFolder.split(";");
+                    Folder folderFather = createFolder(objectStore, nameFolderFather, null);
+                    for (String name : listFolder) {
+                        createFolderTest(objectStore, folderFather, name);
+                    }
+                    break;
                 case "deleteFolder":
                     String nameFolderDelete = request.getParameter("nameFolderDelete");
                     Folder folderDelete = getFolderParent(objectStore, nameFolderDelete);
@@ -146,18 +165,27 @@ public class CreateFolderService extends PluginService {
         conten.serialize(response.getOutputStream());
     }
 
+    private Folder createFolderTest(ObjectStore objectStore, Folder folderFather, String nameFolder) {
+        Folder folder = Factory.Folder.createInstance(objectStore, "Folder");
+        folder.set_Parent(folderFather);
+        folder.set_FolderName(nameFolder);
+        folder.save(RefreshMode.REFRESH);
+
+        for (int i = 0; i < 3; i++) {
+            Folder subFolder = folder.createSubFolder("DVKH" + i);
+            subFolder.save(RefreshMode.REFRESH);
+        }
+        return folder;
+    }
+
     private void deleteFolder(Folder folderDelete) {
         FolderSet subFolder = folderDelete.get_SubFolders();
-        if (subFolder.isEmpty()) {
-            folderDelete.delete();
-            folderDelete.save(RefreshMode.REFRESH);
-        } else {
+        if (!subFolder.isEmpty()) {
             Iterator<Folder> iterator = subFolder.iterator();
             Folder folder = null;
             while (iterator.hasNext()) {
                 folder = iterator.next();
                 deleteSubFolder(folder);
-                System.out.println("---------delete "+folder.get_FolderName() +"------------");
             }
         }
         folderDelete.delete();
@@ -166,10 +194,7 @@ public class CreateFolderService extends PluginService {
 
     private void deleteSubFolder(Folder folder) {
         FolderSet subFolder = folder.get_SubFolders();
-        if (subFolder.isEmpty()) {
-            folder.delete();
-            folder.save(RefreshMode.REFRESH);
-        } else {
+        if (!subFolder.isEmpty()) {
             Iterator iterator = subFolder.iterator();
             Folder f = null;
             while (iterator.hasNext()) {
@@ -177,6 +202,8 @@ public class CreateFolderService extends PluginService {
                 deleteSubFolder(f);
             }
         }
+        folder.delete();
+        folder.save(RefreshMode.REFRESH);
     }
 
     private void copyFolder(Folder folderCopy, Folder folderNew, ObjectStore objectStore) {
@@ -286,6 +313,30 @@ public class CreateFolderService extends PluginService {
         return folderFather;
     }
 
+    /**
+     * @param nameFolder tên Cif cần tìm
+     */
+    private Folder getCifFolder(ObjectStore os, String nameFolder) {
+        Folder folder = null;
+        try {
+            String mySQLString = "SELECT * FROM CIFModel WHERE FolderName = '" + nameFolder
+                    + "' AND This INSUBFOLDER '/Khách hàng'";
+
+            SearchSQL sqlObject = new SearchSQL();
+            sqlObject.setQueryString(mySQLString);
+            SearchScope searchScope = new SearchScope(os);
+            IndependentObjectSet objSet = searchScope.fetchObjects(sqlObject, null, null, Boolean.TRUE);
+            Iterator it = objSet.iterator();
+            while (it.hasNext()) {
+                folder = (Folder) it.next();
+                break;
+            }
+            return folder;
+        } catch (Exception e) {
+            return folder;
+        }
+    }
+
     public ObjectStore getObjectStore() {
         String uri = "http://192.168.0.99:9080/wsi/FNCEWS40MTOM/";
         String username = "p8admin";
@@ -315,4 +366,5 @@ public class CreateFolderService extends PluginService {
         document.set_StorageArea(sa);
         document.save(RefreshMode.NO_REFRESH);
     }
+    
 }
